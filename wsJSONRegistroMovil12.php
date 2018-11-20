@@ -16,6 +16,7 @@ $password_localhost="Tezio159sA";
 	$insert="INSERT INTO cambclim(fechareg12, intverini12, intvercal12, intprufun12, strobs12, strdis12) VALUES ('{$fechareg}', '{$intverini}', '{$intvercal}', '{$intprufun}', '{$strobs}', '{$strdis}')";
 	$resultado_insert=mysqli_query($conexion,$insert);
 
+
 		echo "registra";
 
 ?>
