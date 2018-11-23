@@ -13,8 +13,8 @@ $password_localhost="Tezio159sA";
 	$intvercal=$_POST['intvercal'];
 	$intvercox=$_POST['intvercox'];
 	$intverfun=$_POST['intverfun'];
-	$strobs=html_entity_decode($_POST['strobs'], ENT_QUOTES | ENT_HTML401, "UTF-8");
-	$strdis=html_entity_decode($_POST['strdis'], ENT_QUOTES | ENT_HTML401, "UTF-8");
+	$strobs=htmlentities($_POST['strobs']);
+	$strdis=htmlentities($_POST['strdis']);
 	$estatus='2';
 
 	$insert="INSERT INTO cicloagua(fechareg, intvercli, intvercal, intvercox, intverfun, strobs, strdis, est_cicloagua) VALUES ('{$fechareg}', '{$intvercli}', '{$intvercal}', '{$intvercox}', '{$intverfun}', '{$strobs}', '{$strdis}', '{$estatus}')";
