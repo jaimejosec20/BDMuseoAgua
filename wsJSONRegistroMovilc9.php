@@ -12,9 +12,9 @@ $password_localhost="Tezio159sA";
 	$intreapru=$_POST['intreapru'];
 	$strobs=$_POST['strobs'];
 	$strdis=$_POST['strdis'];
-	$estatus='1';
+	$estatus='2';
 
-	$insert="INSERT INTO mitleyen(fechareg10, intverini10, intvercal10, intreapru10, strobs10, strdis10, est_mitleyen) VALUES ('{$fechareg}', '{$intverini}', '{$intvercal}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";
+	$insert="INSERT INTO objsumer(fechareg9, intverini9, intvercal9, intreapru9, strobs9, strdis9, est_objsumer) VALUES ('{$fechareg}', '{$intverini}', '{$intvercal}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";
 	$resultado_insert=mysqli_query($conexion,$insert);
 
 		echo "registra";

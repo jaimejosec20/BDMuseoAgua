@@ -9,13 +9,14 @@ $password_localhost="Tezio159sA";
 	$fechareg=$_POST['fechareg'];
 	$intverini=$_POST['intverini'];
 	$intvercal=$_POST['intvercal'];
-	$intreapru=$_POST['intreapru'];
+	$intprufun=$_POST['intprufun'];
 	$strobs=$_POST['strobs'];
 	$strdis=$_POST['strdis'];
-	$estatus='1';
+	$estatus='2';
 
-	$insert="INSERT INTO mitleyen(fechareg10, intverini10, intvercal10, intreapru10, strobs10, strdis10, est_mitleyen) VALUES ('{$fechareg}', '{$intverini}', '{$intvercal}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";
+	$insert="INSERT INTO cambclim(fechareg12, intverini12, intvercal12, intprufun12, strobs12, strdis12, est_cambclim) VALUES ('{$fechareg}', '{$intverini}', '{$intvercal}', '{$intprufun}', '{$strobs}', '{$strdis}', '{$estatus}')";
 	$resultado_insert=mysqli_query($conexion,$insert);
+
 
 		echo "registra";
 

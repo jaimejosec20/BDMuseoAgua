@@ -8,15 +8,15 @@ $password_localhost="Tezio159sA";
 	
 	$fechareg=$_POST['fechareg'];
 	$intverini=$_POST['intverini'];
-	$intvercal=$_POST['intvercal'];
+	$intcalpro=$_POST['intcalpro'];
 	$intreapru=$_POST['intreapru'];
 	$strobs=$_POST['strobs'];
 	$strdis=$_POST['strdis'];
-	$estatus='1';
+	$estatus='2';
 
-	$insert="INSERT INTO mitleyen(fechareg10, intverini10, intvercal10, intreapru10, strobs10, strdis10, est_mitleyen) VALUES ('{$fechareg}', '{$intverini}', '{$intvercal}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";
+	$insert="INSERT INTO verthidro(fechareg3, intverini3, intcalpro3, intreapru3, strobs3, strdis3, est_verthidro) VALUES ('{$fechareg}', '{$intverini}', '{$intcalpro}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";
 	$resultado_insert=mysqli_query($conexion,$insert);
 
 		echo "registra";
-
+		
 ?>

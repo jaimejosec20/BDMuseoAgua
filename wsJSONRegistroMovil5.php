@@ -12,8 +12,9 @@ $password_localhost="Tezio159sA";
 	$intfunfon=$_POST['intfunfon'];
 	$strobs=$_POST['strobs'];
 	$strdis=$_POST['strdis'];
+	$estatus='1';
 
-	$insert="INSERT INTO setnoticias(fechareg5, intverini5, intverfun5, intfunfon5, strobs5, strdis5) VALUES ('{$fechareg}', '{$intverini}', '{$intverfun}', '{$intfunfon}', '{$strobs}', '{$strdis}')";
+	$insert="INSERT INTO setnoticias(fechareg5, intverini5, intverfun5, intfunfon5, strobs5, strdis5, est_setnoticias) VALUES ('{$fechareg}', '{$intverini}', '{$intverfun}', '{$intfunfon}', '{$strobs}', '{$strdis}', '{$estatus}')";
 	$resultado_insert=mysqli_query($conexion,$insert);
 
 		echo "registra";

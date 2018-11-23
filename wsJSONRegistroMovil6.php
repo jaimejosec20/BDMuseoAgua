@@ -12,8 +12,9 @@ $password_localhost="Tezio159sA";
 	$intreapru=$_POST['intreapru'];
 	$strobs=$_POST['strobs'];
 	$strdis=$_POST['strdis'];
+	$estatus='1';
 
-	$insert="INSERT INTO pisoagua(fechareg6, intverini6, intverpro6, intreapru6, strobs6, strdis6) VALUES ('{$fechareg}', '{$intverini}', '{$intverpro}', '{$intreapru}', '{$strobs}', '{$strdis}')";
+	$insert="INSERT INTO pisoagua(fechareg6, intverini6, intverpro6, intreapru6, strobs6, strdis6, est_pisoagua) VALUES ('{$fechareg}', '{$intverini}', '{$intverpro}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";
 	$resultado_insert=mysqli_query($conexion,$insert);
 
 		echo "registra";

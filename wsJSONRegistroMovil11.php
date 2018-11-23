@@ -13,8 +13,9 @@ $password_localhost="Tezio159sA";
 	$intreapru=$_POST['intreapru'];
 	$strobs=$_POST['strobs'];
 	$strdis=$_POST['strdis'];
+	$estatus='1';
 
-	$insert="INSERT INTO accreacc(fechareg11, intverini11, intverpro11, intconpro11, intreapru11, strobs11, strdis11) VALUES ('{$fechareg}', '{$intverini}', '{$intverpro}', '{$intconpro}', '{$intreapru}', '{$strobs}', '{$strdis}')";
+	$insert="INSERT INTO accreacc(fechareg11, intverini11, intverpro11, intconpro11, intreapru11, strobs11, strdis11, est_accreacc) VALUES ('{$fechareg}', '{$intverini}', '{$intverpro}', '{$intconpro}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";
 	$resultado_insert=mysqli_query($conexion,$insert);
 
 		echo "registra";

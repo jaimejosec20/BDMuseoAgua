@@ -13,8 +13,10 @@ $password_localhost="Tezio159sA";
 	$intverfun=$_POST['intverfun'];
 	$strobs=$_POST['strobs'];
 	$strdis=$_POST['strdis'];
+	$estatus='1';
+	
 
-	$insert="INSERT INTO cicloagua(fechareg, intvercli, intvercal, intvercox, intverfun, strobs, strdis) VALUES ('{$fechareg}', '{$intvercli}', '{$intvercal}', '{$intvercox}', '{$intverfun}', '{$strobs}', '{$strdis}')";
+	$insert="INSERT INTO cicloagua(fechareg, intvercli, intvercal, intvercox, intverfun, strobs, strdis, est_cicloagua) VALUES ('{$fechareg}', '{$intvercli}', '{$intvercal}', '{$intvercox}', '{$intverfun}', '{$strobs}', '{$strdis}', '{$estatus}')";
 
 	$resultado_insert=mysqli_query($conexion,$insert);
 

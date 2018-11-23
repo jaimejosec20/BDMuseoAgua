@@ -13,8 +13,9 @@ $password_localhost="Tezio159sA";
 	$intverpru=$_POST['intverpru'];
 	$strobs=$_POST['strobs'];
 	$strdis=$_POST['strdis'];
+	$estatus='1';
 
-	$insert="INSERT INTO cicloherr(fechareg2, intverini2, intvercox2, intvercal2, intverpru2, strobs2, strdis2) VALUES ('{$fechareg}', '{$intverini}', '{$intvercon}', '{$intvercal}', '{$intverpru}', '{$strobs}', '{$strdis}')";
+	$insert="INSERT INTO cicloherr(fechareg2, intverini2, intvercox2, intvercal2, intverpru2, strobs2, strdis2, est_cicloherr) VALUES ('{$fechareg}', '{$intverini}', '{$intvercon}', '{$intvercal}', '{$intverpru}', '{$strobs}', '{$strdis}', '{$estatus}')";
 	$resultado_insert=mysqli_query($conexion,$insert);
 
 		echo "registra";

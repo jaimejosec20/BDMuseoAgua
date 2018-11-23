@@ -12,8 +12,9 @@ $password_localhost="Tezio159sA";
 	$intreapru=$_POST['intreapru'];
 	$strobs=$_POST['strobs'];
 	$strdis=$_POST['strdis'];
+	$estatus='1';
 
-	$insert="INSERT INTO verthidro(fechareg3, intverini3, intcalpro3, intreapru3, strobs3, strdis3) VALUES ('{$fechareg}', '{$intverini}', '{$intcalpro}', '{$intreapru}', '{$strobs}', '{$strdis}')";
+	$insert="INSERT INTO verthidro(fechareg3, intverini3, intcalpro3, intreapru3, strobs3, strdis3, est_verthidro) VALUES ('{$fechareg}', '{$intverini}', '{$intcalpro}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";
 	$resultado_insert=mysqli_query($conexion,$insert);
 
 		echo "registra";
