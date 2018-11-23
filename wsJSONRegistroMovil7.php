@@ -10,8 +10,8 @@ $password_localhost="Tezio159sA";
 	$intverini=$_POST['intverini'];
 	$intvercon=$_POST['intvercon'];
 	$intreapru=$_POST['intreapru'];
-	$strobs=$_POST['strobs'];
-	$strdis=$_POST['strdis'];
+	$strobs=htmlentities($_POST['strobs']);
+	$strdis=htmlentities($_POST['strdis']);
 	$estatus='1';
 
 	$insert="INSERT INTO huellahid(fechareg7, intverini7, intvercon7, intreapru7, strobs7, strdis7, est_huellahid) VALUES ('{$fechareg}', '{$intverini}', '{$intvercon}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";

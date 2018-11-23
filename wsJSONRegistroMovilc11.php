@@ -11,8 +11,8 @@ $password_localhost="Tezio159sA";
 	$intverpro=$_POST['intverpro'];
 	$intconpro=$_POST['intconpro'];
 	$intreapru=$_POST['intreapru'];
-	$strobs=$_POST['strobs'];
-	$strdis=$_POST['strdis'];
+	$strobs=htmlentities($_POST['strobs']);
+	$strdis=htmlentities($_POST['strdis']);
 	$estatus='2';
 
 	$insert="INSERT INTO accreacc(fechareg11, intverini11, intverpro11, intconpro11, intreapru11, strobs11, strdis11, est_accreacc) VALUES ('{$fechareg}', '{$intverini}', '{$intverpro}', '{$intconpro}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";

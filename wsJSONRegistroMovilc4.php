@@ -10,8 +10,8 @@ $password_localhost="Tezio159sA";
 	$intverini=$_POST['intverini'];
 	$intvercal=$_POST['intvercal'];
 	$intverpru=$_POST['intverpru'];
-	$strobs=$_POST['strobs'];
-	$strdis=$_POST['strdis'];
+	$strobs=htmlentities($_POST['strobs']);
+	$strdis=htmlentities($_POST['strdis']);
 	$estatus='2';
 
 	$insert="INSERT INTO vertederos(fechareg4, intverini4, intreacal4, intreapru4, strobs4, strdis4, est_vertederos) VALUES ('{$fechareg}', '{$intverini}', '{$intvercal}', '{$intverpru}', '{$strobs}', '{$strdis}', '{$estatus}')";

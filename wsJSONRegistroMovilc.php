@@ -6,8 +6,6 @@ $password_localhost="Tezio159sA";
 
 	$conexion=mysqli_connect($hostname_localhost,$username_localhost,$password_localhost,$database_localhost);
 	
-	//@mysqli_query("SET NAMES 'utf8'",$conexion);
-
 	$fechareg=$_POST['fechareg'];
 	$intvercli=$_POST['intvercli'];
 	$intvercal=$_POST['intvercal'];

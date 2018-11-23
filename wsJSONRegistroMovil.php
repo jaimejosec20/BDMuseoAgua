@@ -11,8 +11,8 @@ $password_localhost="Tezio159sA";
 	$intvercal=$_POST['intvercal'];
 	$intvercox=$_POST['intvercox'];
 	$intverfun=$_POST['intverfun'];
-	$strobs=$_POST['strobs'];
-	$strdis=$_POST['strdis'];
+	$strobs=htmlentities($_POST['strobs']);
+	$strdis=htmlentities($_POST['strdis']);
 	$estatus='1';
 	
 

@@ -10,8 +10,8 @@ $password_localhost="Tezio159sA";
 	$intverini=$_POST['intverini'];
 	$intvercal=$_POST['intvercal'];
 	$intreapru=$_POST['intreapru'];
-	$strobs=$_POST['strobs'];
-	$strdis=$_POST['strdis'];
+	$strobs=htmlentities($_POST['strobs']);
+	$strdis=htmlentities($_POST['strdis']);
 	$estatus='1';
 
 	$insert="INSERT INTO bioesfera(fechareg8, intverini8, intvercal8, intreapru8, strobs8, strdis8, est_bioesfera) VALUES ('{$fechareg}', '{$intverini}', '{$intvercal}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";

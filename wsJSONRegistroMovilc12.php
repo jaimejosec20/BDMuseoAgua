@@ -10,8 +10,8 @@ $password_localhost="Tezio159sA";
 	$intverini=$_POST['intverini'];
 	$intvercal=$_POST['intvercal'];
 	$intprufun=$_POST['intprufun'];
-	$strobs=$_POST['strobs'];
-	$strdis=$_POST['strdis'];
+	$strobs=htmlentities($_POST['strobs']);
+	$strdis=htmlentities($_POST['strdis']);
 	$estatus='2';
 
 	$insert="INSERT INTO cambclim(fechareg12, intverini12, intvercal12, intprufun12, strobs12, strdis12, est_cambclim) VALUES ('{$fechareg}', '{$intverini}', '{$intvercal}', '{$intprufun}', '{$strobs}', '{$strdis}', '{$estatus}')";

@@ -10,8 +10,8 @@ $password_localhost="Tezio159sA";
 	$intverini=$_POST['intverini'];
 	$intvercal=$_POST['intvercal'];
 	$intreapru=$_POST['intreapru'];
-	$strobs=$_POST['strobs'];
-	$strdis=$_POST['strdis'];
+	$strobs=htmlentities($_POST['strobs']);
+	$strdis=htmlentities($_POST['strdis']);
 	$estatus='1';
 
 	$insert="INSERT INTO objsumer(fechareg9, intverini9, intvercal9, intreapru9, strobs9, strdis9, est_objsumer) VALUES ('{$fechareg}', '{$intverini}', '{$intvercal}', '{$intreapru}', '{$strobs}', '{$strdis}', '{$estatus}')";
